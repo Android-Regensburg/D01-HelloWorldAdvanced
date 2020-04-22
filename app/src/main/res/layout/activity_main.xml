@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--
+        Alle  UI-Elemente sind in einem Layout-Element zusammgefasst. Das Layout nutzt dabei gesamten
+        verfügbaren Platz auf dem Bildschirm aus ("match_parent") und verfügt über einen Innenabstand
+        von 6sp (Relative Größenangabe, die zusätzlich die aktuelle ausgewählte Schriftgröße des ).
+        Systems berücksichtigt.
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="6sp"
+        android:orientation="vertical">
+
+        <!--
+            Statischer Titeltext. Der Inhalt (android:text) wird aus der XML-Datei (strings.xml)
+            referenziert.
+        -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18sp"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:text="@string/title" />
+
+        <!--
+            Statischer Hinweis auf die Textquelle. Der Inhalt (android:text) wird aus der XML-Datei (strings.xml)
+            referenziert.
+        -->
+        <TextView
+            android:id="@+id/source"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18sp"
+            android:textAlignment="center"
+            android:text="@string/source" />
+
+        <!--
+            Anfangs leerer Bereich zur Anzeige der einzelnen Prinzipien. Die Angabe des "layout_width"
+            sorgt dafür, das beim Ausfüllen des verfügbaren Platzes, Raum für den nachfolgenden Button
+            bleibt. Über die Eigenschaft können Sie bestimmten, welche Elemente wie stark "wachsen" dürfen,
+            wenn auf dem Bildschirm mehr Platz als benötigt wird vorhanden ist.
+        -->
+        <TextView
+            android:id="@+id/content"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="6sp"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:lineHeight="54sp"
+            android:text="" />
+
+        <!-- Button für den Wechsel zum nächsten Prinzip -->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonLabel" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

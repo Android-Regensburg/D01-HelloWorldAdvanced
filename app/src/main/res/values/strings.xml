@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">HelloWorldAdvanced</string>
+    <!-- Titeltext, wird statisch in das User Interface eingebunden -->
+    <string name="title">Principles for Agile Software Development</string>
+    <!-- Quelle für die Agile Principles, wird statisch in das User Interface eingebunden -->
+    <string name="source">https://agilemanifesto.org/</string>
+    <!-- Label für den Button, wird statisch in das User Interface eingebunden -->
+    <string name="buttonLabel">Click</string>
+    <!-- String-Array mit den zwölf Prinzipien, die nacheinander im UI angezeigt werden sollen. Das Array wird in der MainActivity in eine entsprechende Java-Variable geladen. -->
+    <string-array name="agile_principles">
+        <item>Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.</item>
+        <item>Welcome changing requirements, even late in development. Agile processes harness change for the customer\'s competitive advantage.</item>
+        <item>Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale. </item>
+        <item>Business people and developers must work together daily throughout the project.</item>
+        <item>Build projects around motivated individuals. Give them the environment and support they need,and trust them to get the job done.</item>
+        <item>The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.</item>
+        <item>Working software is the primary measure of progress.</item>
+        <item>Agile processes promote sustainable development.The sponsors, developers, and users should be able to maintain a constant pace indefinitely.</item>
+        <item>Continuous attention to technical excellence and good design enhances agility.</item>
+        <item>Simplicity - the art of maximizing the amount of work not done - is essential. </item>
+        <item>The best architectures, requirements, and designs emerge from self-organizing teams. </item>
+        <item>At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.</item>
+    </string-array>
+</resources>
